@@ -25,7 +25,7 @@ loop do
       f = num1.to_f * 9 / 5 + 32 #to farenheit
       puts "#{f} F"
     else
-      say "XXXXXXXXXXXX INVALID INPUT XXXXXXXXXXXX"
+      puts "XXXXXXXXXXXX INVALID INPUT XXXXXXXXXXXX"
     end
   else  say "Give me another number please"# if operator is not 5 askes for additional input
         num2 = gets.chomp
@@ -33,19 +33,18 @@ loop do
 
 
 
-if operator == "1" #conditional executes simple math and prints it to the screen
-  result = num1.to_i + num2.to_i
-  puts "you number is #{result}"
-elsif operator == "2"
-  result = num1.to_i - num2.to_i
-  puts "your number is #{result}"
-elsif operator == "3"
-  result = num1.to_i * num2.to_i
-  puts "your number is #{result}"
-elsif operator == "4"
-  result = num1.to_f / num2.to_f
-  puts "your number is #{result}"
-else 
-end
-break
+  if operator == "1" #conditional executes simple math and prints it to the screen
+    result = num1.to_i + num2.to_i
+    puts "you number is #{result}"
+  elsif operator == "2"
+    result = num1.to_i - num2.to_i
+    puts "your number is #{result}"
+  elsif operator == "3"
+    result = num1.to_i * num2.to_i
+    puts "your number is #{result}"
+  else operator == "4"
+    result = num1.to_f / num2.to_f
+    puts "your number is #{result}"
+  end
+  break
 end
