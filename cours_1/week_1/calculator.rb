@@ -4,7 +4,7 @@ def say(msg)
   puts "========= #{msg} =========="
 end
   
- 
+  say "Pick the number that you want to do "
   say "1) Add 2) Subtract 3) Multiply 4) Divide 5) Temp conversion"
 loop do 
   operator = gets.chomp
