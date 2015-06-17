@@ -206,7 +206,7 @@ class BlackJack
       dealer.total
       if dealer.total > DEALER_HIT_MIN
         dealer.reveal
-      elsif dealer.total > BlACKJACK_AMOUnT
+      elsif dealer.total > BlACKJACK_AMOUNT
         break
       end
     end
@@ -231,11 +231,11 @@ class BlackJack
 
   def winner?
     if player.total > dealer.total
-      puts "Congratulations #{player.name} you have #{player.total} you win!"
+      puts "Congratulations #{player.name} you have #{player.total} you win! Dealer has #{dealer.total}"
     elsif dealer.total > player.total
-      puts "Sorry #{player.name} the Dealer has #{dealer.total} you lose."
+      puts "#{dealer.reveal}Sorry #{player.name} the Dealer has #{dealer.total} you lose."
     else 
-      puts "Push"
+      puts "#{player.show_flop} #{dealer.reveal} Push"
     end
     play_again?
   end
